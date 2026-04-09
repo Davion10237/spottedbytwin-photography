@@ -1,131 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Twinnxtdoor Visuals</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twinnxtdoor Visuals</title>
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: url('your-car-photo.jpg') no-repeat center/cover;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+}
 
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
 
-    section {
-      padding: 40px;
-      text-align: center;
-    }
+nav h1 {
+    color: #6c63ff;
+    margin: 0;
+}
 
-    .gallery img {
-      width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-    }
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-  </style>
+nav a:hover {
+    color: #6c63ff;
+}
+
+/* HERO */
+header {
+    height: 90vh;
+    background: url('your-car-photo.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+}
+
+header h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    font-size: 0.9em;
+}
+</style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <h1>Twinnxtdoor</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#booking">Book</a>
+    </div>
+</nav>
+
+<!-- HERO -->
 <header>
-  <h1>Twinnxtdoor Visuals</h1>
-  <p>Capturing Cars with Personality</p>
+    <h2>Twinnxtdoor Visuals</h2>
+    <p>Capturing Cars with Personality</p>
+    <a href="#booking" class="btn">Book a Shoot</a>
 </header>
 
-<section>
-  <h2>Portfolio</h2>
-  <div class="gallery">
-    <img src="car1.jpg">
-    <img src="car2.jpg">
-    <img src="car3.jpg">
-  </div>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm a photographer based in NY capturing cars in a unique and creative way.
+        From street shots to luxury builds, I focus on bringing out the personality of every car.
+    </p>
 </section>
 
-<section>
-  <h2>Book a Shoot</h2>
-  <p>Email me: your@email.com</p>
-  <p>Instagram: @twinnxtdoor</p>
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+        <img src="car1.jpg">
+        <img src="car2.jpg">
+        <img src="car3.jpg">
+        <img src="car4.jpg">
+    </div>
 </section>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Twinnxtdoor Visuals</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: url('your-car-photo.jpg') no-repeat center/cover;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-
-    .gallery img {
-      width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Twinnxtdoor Visuals</h1>
-  <p>Capturing Cars with Personality</p>
-</header>
-
-<section>
-  <h2>Portfolio</h2>
-  <div class="gallery">
-    <img src="car1.jpg">
-    <img src="car2.jpg">
-    <img src="car3.jpg">
-  </div>
+<!-- BOOKING -->
+<section id="booking">
+    <h2>Book a Shoot</h2>
+    <p>DM me on Instagram to schedule your shoot</p>
+    <p>@twinnxtdoor</p>
 </section>
 
-<section>
-  <h2>Book a Shoot</h2>
-  <p>Email me: your@email.com</p>
-  <p>Instagram: @twinnxtdoor</p>
-</section>
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Twinnxtdoor Visuals</p>
+</footer>
 
 </body>
 </html>
