@@ -2,65 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Twinnxtdoor Visuals</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-      color: white;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: url('your-car-photo.jpg') no-repeat center/cover;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-
-    .gallery img {
-      width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spottedbytwin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Twinnxtdoor Visuals</h1>
-  <p>Capturing Cars with Personality</p>
+  <!-- Navigation -->
+<nav> 
+  <a href="#about">About</a>
+  <a href="#events">Events</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#submit">Submit Work</a>
+  <a href="#join">Join</a>
+</nav>
+  <!-- Header -->
+  <header class="hero">
+  <h1>Fashion & Music Club</h1>
+  <p>Where creativity, culture, and style come together.</p>
+  <a href="#join" class="btn">Join the Movement</a>
 </header>
 
-<section>
-  <h2>Portfolio</h2>
-  <div class="gallery">
-    <img src="car1.jpg">
-    <img src="car2.jpg">
-    <img src="car3.jpg">
+  <!-- About Section -->
+  <section id="about">
+  <div class="about-box">
+    <h2>About</h2>
+    <p>
+      The Fashion & Music Club at the College of Westchester is a creative
+      space where students and alumni can showcase their talents in fashion,
+      music, art, and photography. Our goal is to build a strong community
+      that supports creativity, collaboration, and innovation.
+    </p>
   </div>
 </section>
 
-<section>
-  <h2>Book a Shoot</h2>
-  <p>Email me: your@email.com</p>
-  <p>Instagram: @twinnxtdoor</p>
+  <!-- Events Section -->
+  <section id="events">
+    <h2>Our Events</h2>
+
+    <div class="events-container">
+
+      <div class="event">
+        <h3>🎤 Music Listening Parties</h3>
+        <p>Discover new artists, share playlists, and break down albums together.</p>
+      </div>
+
+      <div class="event">
+        <h3>📸 Fashion Photoshoots</h3>
+        <p>Create looks, style models, and build your creative portfolio.</p>
+      </div>
+
+      <div class="event">
+        <h3>💃 Live Dance Performances</h3>
+        <p>Featuring local talent and collaborations with CW’s own dancers.</p>
+      </div>
+
+      <div class="event">
+        <h3>🎧 Beat & Music Production Workshops</h3>
+        <p>Learn beginner-friendly tools for creating tracks and mixing.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery -->
+ <section id="gallery">
+  <h2>Creative Showcase</h2>
+  <p>Featured work submitted by College of Westchester students & alumni.</p>
+
+  <div class="gallery-grid">
+
+    <!-- look1.jpg -->
+    <div class="gallery-card">
+      <img src="look1.jpg" alt="Streetwear styled outfit photoshoot">
+      <div class="card-info">
+        <h3>Davion Headlam</h3>
+        <p class="major">Digital Media & Marketing</p>
+        <p class="description">
+          Streetwear-inspired fashion concept exploring silhouette, layering,
+          and neutral tone coordination for modern campus culture.
+        </p>
+      </div>
+    </div>
+
+    <!-- look2.jpg -->
+    <div class="gallery-card">
+      <img src="look2.jpg" alt="Creative fashion portrait">
+      <div class="card-info">
+        <h3>Jordan Williams</h3>
+        <p class="major">Business Administration, Class of 2026</p>
+        <p class="description">
+          Editorial-style fashion portrait highlighting confidence,
+          minimal styling, and expressive body language through
+          natural lighting techniques.
+        </p>
+      </div>
+    </div>
+
+    <!-- BUSINESS-CASUAL-FLYER.png -->
+    <div class="gallery-card">
+      <img src="BUSINESS-CASUAL-FLYER.png" alt="Business casual student campaign flyer">
+      <div class="card-info">
+        <h3>Alex Martinez</h3>
+        <p class="major">Accounting</p>
+        <p class="description">
+          Promotional campaign design encouraging students to redefine
+          business casual by blending professionalism with individual style.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </section>
+<!-- Submit Section -->
+<section id="submit">
+  <h2>Submit Your Creative Work</h2>
+
+  <p>
+    Current CW students and alumni can submit their fashion designs,
+    music projects, photography, or artwork to be featured on our
+    digital showcase. All submissions are reviewed before being published.
+  </p>
+
+  <form action="https://formspree.io/f/meelvokq" 
+        method="POST" 
+        enctype="multipart/form-data">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <input type="text" name="major" placeholder="Major / Graduation Year">
+
+    <textarea name="description"
+      placeholder="Describe your creative work..."
+      required></textarea>
+
+    <input type="file" name="file">
+
+    <button type="submit">Submit Your Work</button>
+
+  </form>
+</section>
+  <!-- Join Section -->
+  <section id="join">
+    <h2>Join Us</h2>
+    <p>Interested in joining the club? Fill out the form below.</p>
+
+    <form action="https://formspree.io/f/xyzeagwv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Why do you want to join?" required></textarea>
+      <button type="submit">Join the Club</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Fashion & Music Club – College of Westchester</p>
+  </footer>
 
 </body>
 </html>
