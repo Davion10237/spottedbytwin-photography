@@ -2,96 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twinnxtdoor Visuals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
 
-  <!-- LINK YOUR CSS -->
-  <link rel="stylesheet" href="style.css">
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('your-car-photo.jpg') no-repeat center/cover;
+    }
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#about">About</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#booking">Book</a>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
+<header>
   <h1>Twinnxtdoor Visuals</h1>
   <p>Capturing Cars with Personality</p>
-  <a href="#booking" class="btn">Book a Shoot</a>
-</div>
+</header>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-box">
-    <h2>About Me</h2>
-    <p>
-      I’m a NY-based photographer focused on capturing cars in a creative and cinematic way.
-      From street shots to luxury builds, I bring out the personality in every car I shoot.
-    </p>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio">
+<section>
   <h2>Portfolio</h2>
-
-  <div class="gallery-grid">
-
-    <div class="gallery-card">
-      <img src="car1.jpg">
-      <div class="card-info">
-        <h3>AMG</h3>
-        <p class="major">Luxury</p>
-        <p class="description">Clean luxury shot with a cinematic look.</p>
-      </div>
-    </div>
-
-    <div class="gallery-card">
-      <img src="car2.jpg">
-      <div class="card-info">
-        <h3>Supra</h3>
-        <p class="major">JDM</p>
-        <p class="description">Street-style shot with bold lighting.</p>
-      </div>
-    </div>
-
-    <div class="gallery-card">
-      <img src="car3.jpg">
-      <div class="card-info">
-        <h3>Maybach</h3>
-        <p class="major">Luxury</p>
-        <p class="description">Premium angles highlighting details.</p>
-      </div>
-    </div>
-
+  <div class="gallery">
+    <img src="car1.jpg">
+    <img src="car2.jpg">
+    <img src="car3.jpg">
   </div>
 </section>
 
-<!-- BOOKING -->
-<section id="booking">
+<section>
   <h2>Book a Shoot</h2>
-  <p>Fill out the form below or DM me on Instagram @twinnxtdoor</p>
-
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Tell me about your car & shoot idea..." required></textarea>
-    <button type="submit">Send Request</button>
-  </form>
+  <p>Email me: your@email.com</p>
+  <p>Instagram: @twinnxtdoor</p>
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Twinnxtdoor Visuals</p>
-</footer>
 
 </body>
 </html>
