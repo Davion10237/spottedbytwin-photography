@@ -1,1 +1,253 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background: #E6F0FF;
+  color: #111;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  background: #D6E8FF;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  color: #111;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #6E9FFF;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("car-hero.jpg") center/cover; /* 🔥 CHANGE IMAGE HERE */
+  color: white;
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+  background: white;
+  color: #111;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #111;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  background: white;
+  margin: 40px auto;
+  padding: 60px 20px;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: 90px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+/* ABOUT BOX */
+.about-box {
+  background: white;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-box h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-box p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* SERVICES (reusing events styling) */
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.event {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  transition: 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* PORTFOLIO GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CARD TEXT */
+.card-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-info h3 {
+  margin: 0 0 5px 0;
+}
+
+.major {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #6E9FFF;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* FORM */
+form {
+  max-width: 450px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fff;
+  color: #111;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6E9FFF;
+}
+
+/* BOOKING SECTION */
+#submit {
+  padding: 80px 20px;
+  text-align: center;
+  background: #E6F0FF;
+  border-top: 1px solid #ddd;
+}
+
+#submit p {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+#submit form {
+  max-width: 500px;
+  margin: auto;
+  background: #E6F0FF;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #111;
+  opacity: 0.8;
+  background: #f7f7f7;
+}
