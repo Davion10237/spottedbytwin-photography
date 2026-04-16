@@ -251,25 +251,4 @@ footer {
   opacity: 0.8;
   background: #f7f7f7;
 }
-.logo-section {
-  text-align: center;
-  margin-top: 60px;
-  position: relative;
-}
 
-.logo-section img {
-  width: 180px;
-  position: relative;
-  z-index: 2;
-}
-
-.logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #6E9FFF;
-  opacity: 0.2;
-  z-index: 1;
-}
